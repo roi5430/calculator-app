@@ -14,7 +14,6 @@ const theme = createTheme({
         root: {
           borderRadius: 50,
           color: "#000",
-          // minWidth: 65,
         },
       },
     },

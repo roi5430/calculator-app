@@ -165,13 +165,11 @@ function App() {
           <Grid item container columnSpacing={1}>
             <GridDigitButton digit="0" enterDigit={setDigit} xs={6} />
             <GridDigitButton digit="," enterDigit={setDigit} xs={3} />
-            <Grid item xs={3}>
-              <GridOprtButton
-                operation={"="}
-                selectOprt={equals}
-                selectedOteration={operation}
-              />
-            </Grid>
+            <GridOprtButton
+              operation={"="}
+              selectOprt={equals}
+              selectedOteration={operation}
+            />
           </Grid>
         </Grid>
       </CalculatorBase>
