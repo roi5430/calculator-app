@@ -12,12 +12,7 @@ const StyledBnt = styled(Button)<{ selected: boolean }>((props) => ({
   backgroundColor: props.selected ? "ffb041" : "#ff9041",
   color: "#fff",
   fontSize: "1.8rem",
-  width: "100%",
-  height: "100%",
-  "&:hover": {
-    backgroundColor: "#ffb041",
-  },
-  "&:active": {
+  "&:hover, focus, active": {
     backgroundColor: "#ffb041",
   },
 }));
@@ -30,7 +25,7 @@ export const GridOprtButton: React.FC<GridOprtButtonProps> = ({
   return (
     <Grid item xs={3}>
       <StyledBnt
-        // fullWidth
+        fullWidth
         variant="contained"
         onClick={() => selectOprt(operation)}
         selected={selectedOteration === operation}

@@ -108,7 +108,9 @@ function App() {
       <CalculatorBase elevation={3}>
         <Grid container spacing={1}>
           <Grid item xs={12}>
-            <OutputContainer>{currentValue}</OutputContainer>
+            <OutputContainer data-testid="output">
+              {currentValue}
+            </OutputContainer>
           </Grid>
           <Grid item container columnSpacing={1}>
             <GridOprtButton
