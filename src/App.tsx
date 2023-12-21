@@ -30,7 +30,7 @@ function App() {
     });
   };
 
-  const selectOprt = (operation: string) => {
+  const selectOprt = (operation: string): void => {
     if (prevValue) {
       const value = calculation();
       setCurrentValue(`${value}`);
@@ -52,6 +52,10 @@ function App() {
 
     switch (operation) {
       case "/":
+        if (curr === 0) {
+          setCurrentValue("0");
+          setOverwrite(true);
+        }
         result = prev / curr;
         break;
       case "*":
