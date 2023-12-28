@@ -45,5 +45,21 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roi5430/calculator-app.git"
+  },
+  "keywords": [
+    "jrcfyf"
+  ],
+  "author": "roi5430",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roi5430/calculator-app/issues"
+  },
+  "homepage": "https://github.com/roi5430/calculator-app#readme"
+
 }

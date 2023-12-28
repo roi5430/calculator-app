@@ -30,7 +30,7 @@ function App() {
     });
   };
 
-  const selectOprt = (operation: string): void => {
+  const selectOprt = (operation: string) => {
     if (prevValue) {
       const value = calculation();
       setCurrentValue(`${value}`);
